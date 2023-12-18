@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
 
-export default function BlogTitle() {
-  const id=useRouter()
+export default function BlogTitle({params}) {
+  const {id}=params
   return (
-    <div>page {id.query.id}</div>
+    <div>page {id}</div>
   )
 }
